@@ -103,7 +103,7 @@ hickory-resolver = { version = "0.26", optional = true }
 hmac = "0.13.0"
 log = { version = "0.4.17", optional = true }
 md-5 = "0.11.0"
-mongodb-internal-macros = { path = "../macros", version = "3.10.1" }
+mongodb-internal-macros = "3.10.1"
 num_cpus = { version = "1.13.1", optional = true }
 openssl = { version = "0.10.38", optional = true }
 openssl-probe = { version = "0.1.5", optional = true }
@@ -156,23 +156,17 @@ default-features = false
 
 [dependencies.bson2]
 version = "2.15.0"
-git = "https://github.com/mongodb/bson-rust"
-branch = "2.15.x"
 package = "bson"
 optional = true
 
 [dependencies.bson3]
 version = "3.1.0"
-git = "https://github.com/mongodb/bson-rust"
-branch = "main"
 package = "bson"
 optional = true
 features = ["serde"]
 
 [dependencies.mongocrypt]
 version = "0.4.0"
-git = "https://github.com/mongodb/libmongocrypt-rust.git"
-branch = "main"
 default-features = false
 optional = true
 
@@ -234,8 +228,6 @@ serde-hex = "0.1.0"
 serde_path_to_error = "0.1"
 
 [dev-dependencies.bson3]
-git = "https://github.com/mongodb/bson-rust"
-branch = "main"
 package = "bson"
 version = "3.0.0"
 features = ["serde", "serde_json-1"]
